@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en" data-theme="purple">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YOUR NAME | Websites for Small Businesses</title>
+  <meta name="description" content="Simple, fast, mobile-friendly websites for small businesses. One-page sites from KES 1,000 and full websites from KES 5,000.">
+  <meta name="theme-color" content="#09090c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    /* Restores the saved theme before the page paints and turns on scroll animations. */
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'purple' || t === 'maroon') d.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="logo" href="#top">YOUR NAME<span class="logo-dot">.</span></a>
+
+    <nav id="nav" class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#work">Samples</a>
+      <a href="#process">How it works</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch theme to maroon">
+        <span class="swatch swatch-purple"></span>
+        <span class="swatch swatch-maroon"></span>
+        <span class="theme-label" id="theme-label">Purple</span>
+      </button>
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="badge" id="offer-badge" data-launch>
+          <span class="dot" aria-hidden="true"></span>
+          Launch offer: <strong id="spots-left">5</strong> of <span id="spots-total">5</span> spots left
+        </p>
+        <h1>Websites for <span class="typed-wrap"><span id="typed">salons</span><span class="caret" aria-hidden="true"></span></span> and every small business.</h1>
+        <p class="lead">Simple, fast, mobile-friendly websites that make your business easy to find and easy to contact. Customers can reach you on WhatsApp with one tap.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#contact" data-wa>Chat on WhatsApp</a>
+          <a class="btn btn-ghost" href="#pricing">See pricing</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="mock">
+          <div class="mock-bar">
+            <i></i><i></i><i></i>
+            <span class="mock-url">yourbusiness.com</span>
+          </div>
+          <div class="mock-body">
+            <div class="m-hero"><span class="m-title"></span><span class="m-sub"></span><span class="m-btn"></span></div>
+            <div class="m-row"><span></span><span></span><span></span></div>
+            <div class="m-line l1"></div>
+            <div class="m-line l2"></div>
+            <div class="m-line l3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Services</p>
+        <h2>Everything you need to get online</h2>
+      </div>
+      <div class="grid">
+        <article class="card reveal">
+          <h3>One-page websites</h3>
+          <p>A clean single page with your services, photos, contact details, and a WhatsApp button. Quick to build, easy for customers to use.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Full websites</h3>
+          <p>Multiple pages and fully functioning features, built around how your business works.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Hosting and setup</h3>
+          <p>I can put your site live on professional platforms, including Netlify, and connect it to your own domain.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="section section-alt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Pricing</p>
+        <h2>Clear prices, no surprises</h2>
+        <p class="muted">Website prices do not include hosting. Hosting is a separate fee.</p>
+      </div>
+      <div class="grid">
+        <article class="card plan featured reveal">
+          <p class="tag" data-launch>Launch offer: first 5 customers</p>
+          <h3>One-page website</h3>
+          <p class="price"><span class="from">KES</span> 1,000 – 1,500</p>
+          <ul class="ticks">
+            <li>One clean, scrolling page</li>
+            <li>Works on phones and computers</li>
+            <li>WhatsApp and call buttons</li>
+            <li>Your services, photos, and location</li>
+          </ul>
+          <a class="btn btn-primary" href="#contact" data-wa>Claim a spot</a>
+        </article>
+
+        <article class="card plan reveal">
+          <h3>Full website</h3>
+          <p class="price"><span class="from">From KES</span> 5,000</p>
+          <ul class="ticks">
+            <li>Several pages</li>
+            <li>Fully functioning features as needed</li>
+            <li>Contact forms and galleries</li>
+            <li>Built around your business</li>
+          </ul>
+          <a class="btn btn-ghost" href="#contact" data-wa>Ask for a quote</a>
+        </article>
+
+        <article class="card plan reveal">
+          <h3>Hosting</h3>
+          <p class="price price-text">Fee varies</p>
+          <ul class="ticks">
+            <li>Fees differ between professional platforms</li>
+            <li>Netlify hosting available at a negotiable price</li>
+            <li>Domain connection on request</li>
+          </ul>
+          <a class="btn btn-ghost" href="#contact" data-wa>Talk hosting</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAMPLES -->
+  <section id="work" class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Samples</p>
+        <h2>Sample designs by business type</h2>
+        <p class="muted">These are sample layouts, not client sites. Yours is built around your own brand.</p>
+      </div>
+
+      <div class="filters reveal" role="group" aria-label="Filter samples">
+        <button class="chip is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip" type="button" data-filter="beauty" aria-pressed="false">Beauty</button>
+        <button class="chip" type="button" data-filter="food" aria-pressed="false">Food</button>
+        <button class="chip" type="button" data-filter="retail" aria-pressed="false">Retail</button>
+        <button class="chip" type="button" data-filter="services" aria-pressed="false">Services</button>
+      </div>
+
+      <div class="samples" id="samples">
+        <article class="sample" data-cat="beauty" style="--c1:#b8336a;--c2:#2b0f1d">
+          <div class="thumb"><span></span><span></span><span></span></div>
+          <h3>Salon</h3><p>Sample design · Beauty</p>
+        </article>
+        <article class="sample" data-cat="beauty" style="--c1:#3b82f6;--c2:#0c1830">
+          <div class="thumb"><span></span><span></span><span></span></div>
+          <h3>Barbershop</h3><p>Sample design · Beauty</p>
+        </article>
+        <article class="sample" data-cat="food" style="--c1:#e8892b;--c2:#2d1706">
+          <div class="thumb"><span></span><span></span><span></span></div>
+          <h3>Restaurant</h3><p>Sample design · Food</p>
+        </article>
+        <article class="sample" data-cat="food" style="--c1:#d9a441;--c2:#2a2008">
+          <div class="thumb"><span></span><span></span><span></span></div>
+          <h3>Bakery</h3><p>Sample design · Food</p>
+        </article>
+        <article class="sample" data-cat="retail" style="--c1:#22a699;--c2:#07241f">
+          <div class="thumb"><span></span><span></span><span></span></div>
+          <h3>Phone accessories shop</h3><p>Sample design · Retail</p>
+        </article>
+        <article class="sample" data-cat="services" style="--c1:#8a6cf0;--c2:#150f2e">
+          <div class="thumb"><span></span><span></span><span></span></div>
+          <h3>Photographer</h3><p>Sample design · Services</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="section section-alt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">How it works</p>
+        <h2>From message to live site</h2>
+      </div>
+      <ol class="steps">
+        <li class="reveal"><h3>Message me</h3><p>Tell me about your business on WhatsApp.</p></li>
+        <li class="reveal"><h3>Send your details</h3><p>Name, services, photos, phone number, location, and opening hours.</p></li>
+        <li class="reveal"><h3>See your site</h3><p>I build it and show you the result.</p></li>
+        <li class="reveal"><h3>Approve and pay</h3><p>Once you are happy, we settle payment.</p></li>
+        <li class="reveal"><h3>Go live</h3><p>You get the code through a GitHub repository. Hosting can be set up for an extra fee.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <div class="wrap narrow">
+      <div class="section-head reveal">
+        <p class="eyebrow">FAQ</p>
+        <h2>Common questions</h2>
+      </div>
+      <div class="faq">
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false">Is hosting included in the price?</button>
+          <div class="faq-a" hidden><p>No. Hosting is a separate fee, and it varies between professional platforms. I can host your site on Netlify for a price we agree on together, or you can host it yourself.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false">How long does a one-page site take?</button>
+          <div class="faq-a" hidden><p>I aim to deliver within the week, once I have your business details and photos.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false">How do I receive my website?</button>
+          <div class="faq-a" hidden><p>The code is shared through a GitHub repository. If you want it live on the internet, I can set up hosting for you.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false">What do I need to send you?</button>
+          <div class="faq-a" hidden><p>Your business name, what you offer, a few photos, your phone or WhatsApp number, your location, and your opening hours. A logo and favorite colors help too.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false">Can you add more features?</button>
+          <div class="faq-a" hidden><p>Yes. Simple sites use plain HTML and CSS. When your business needs more, such as a contact form or interactive features, I add them. Message me with what you have in mind.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="wrap contact-grid">
+      <div class="reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's get your business online</h2>
+        <p class="lead">The fastest way to reach me is WhatsApp. You can also send a message with the form.</p>
+        <a class="btn btn-primary" href="#contact" data-wa>Chat on WhatsApp</a>
+      </div>
+
+      <form class="form reveal" id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hp"><label>Leave this empty <input name="bot-field"></label></p>
+
+        <label for="f-name">Your name</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" required>
+
+        <label for="f-biz">Business type</label>
+        <input id="f-biz" name="business" type="text" placeholder="For example: salon, shop, restaurant">
+
+        <label for="f-contact">Phone or WhatsApp number</label>
+        <input id="f-contact" name="contact" type="tel" autocomplete="tel" required>
+
+        <label for="f-msg">What do you need?</label>
+        <textarea id="f-msg" name="message" rows="4" required></textarea>
+
+        <button class="btn btn-primary" type="submit">Send message</button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>&copy; <span id="year">2026</span> YOUR NAME. Websites for small businesses.</p>
+    <a href="#top">Back to top</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
